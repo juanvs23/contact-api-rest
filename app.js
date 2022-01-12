@@ -11,6 +11,6 @@ server.uses(cors());
 server.uses(express.urlencoded({ extended: true }));
 server.uses(express.json());
 server.routes("/contacts", contactsRoutes());
-server.listen(port,()=>{
+server.listen(3500,()=>{
   console.log(`running at ${port} port`);
 });
