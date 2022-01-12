@@ -1,6 +1,6 @@
 const express = require("express"),
   router = express.Router(),
-  Contacts = require("./contact.Routes"),
+  Contacts = require("./contact.routes"),
   contacts = new Contacts(router);
 
 const contactsRoutes = () => {
