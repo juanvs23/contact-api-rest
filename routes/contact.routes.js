@@ -22,7 +22,7 @@ class Contacts{
     updateContact(){
         this.router.put('/update/:id',[
             check("id", "No es un id valido").isMongoId(),
-            check('id','El usuario no existe').custom(checkId),
+            //check('id','El usuario no existe').custom(checkId),
             validateFields
         ],contacts.updateContact);
     }
